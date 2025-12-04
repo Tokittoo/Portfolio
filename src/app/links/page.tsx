@@ -11,7 +11,7 @@ type LinkItem = { label: string; href: string; icon: React.ReactNode }
 
 const links: LinkItem[] = [
   { label: 'Instagram', href: 'https://www.instagram.com/_tokitoooo_', icon: <IconBrandInstagram className='size-4' /> },
-  { label: 'Twitter', href: 'https://x.com/crishna_27', icon: <IconBrandTwitter className='size-4' /> },
+  { label: 'Twitter', href: 'https://x.com/_krishhhh_', icon: <IconBrandTwitter className='size-4' /> },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/krishna-prasath-r/', icon: <IconBrandLinkedin className='size-4' /> },
   { label: 'GitHub', href: 'https://github.com/Tokittoo', icon: <IconBrandGithub className='size-4' /> },
   { label: 'Peerlist', href: 'https://peerlist.io/krishnaprasath', icon: <SiPeerlist className='size-4' /> },

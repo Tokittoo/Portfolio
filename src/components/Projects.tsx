@@ -93,7 +93,18 @@ const projects: Project[] = [
       Tailwind,
       Motionls
     ]
-  }
+  },
+  {
+    title: 'SECURE WORLDZ',
+    description: "A platform for security professionals to share their knowledge and experiences with the community.",
+    link:'https://secure-worldz.vercel.app',
+    tags: [
+      NextJS,
+      TypeScript,
+      Tailwind,
+      React,
+    ]
+  },
 ]
 
  const upcomingProjects: Project[] = [
