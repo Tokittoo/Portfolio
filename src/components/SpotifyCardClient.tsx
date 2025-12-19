@@ -43,7 +43,7 @@ export default function SpotifyCardClient({ data }: SpotifyCardClientProps) {
       <AnimationWrapper>
         <motion.div
           variants={childVariant}
-          className="w-[620px] mx-auto h-18 bg-card text-card-foreground border border-border rounded-2xl p-4 flex items-center gap-2"
+          className="w-full max-w-[620px] mx-auto h-18 bg-card text-card-foreground border border-border rounded-2xl p-4 flex items-center gap-2"
         >
           <p className="text-sm font-sans tracking-tight">No song data available</p>
         </motion.div>
@@ -55,7 +55,7 @@ export default function SpotifyCardClient({ data }: SpotifyCardClientProps) {
     <AnimationWrapper>
       <motion.div
         variants={childVariant}
-        className="w-[620px] mx-auto bg-card text-card-foreground border border-border rounded-2xl p-2 flex items-center justify-between gap-2"
+        className="w-full max-w-[620px] mx-auto bg-card text-card-foreground border border-border rounded-2xl p-2 flex items-center justify-between gap-2"
       >
         <div className="flex justify-center items-center gap-4">
           <Image

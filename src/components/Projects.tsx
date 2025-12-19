@@ -161,10 +161,10 @@ function Projects() {
       initial={'hidden'}
       animate={'show'}
       variants={parentVariant}
-      className='md:p-2 my-4 p-8' id='projects'
+      className='px-4 md:px-8 my-4 pb-8' id='projects'
     >
-      <motion.h2 variants={childVariant} className='text-4xl ml-2 my-8 font-bold font-sans tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-700 dark:to-white'>Projects</motion.h2>
-      <div className='grid md:grid-cols-2 max-md:mx-4 gap-4'>
+      <motion.h2 variants={childVariant} className='text-3xl md:text-4xl my-8 font-bold font-sans tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-700 dark:to-white'>Projects</motion.h2>
+      <div className='grid md:grid-cols-2 gap-4'>
         {
           projects.map(project => (
             <div key={project.title} className="projects">
@@ -179,8 +179,8 @@ function Projects() {
         </button>
       </Link>
 
-      <h2 className='text-4xl ml-2 my-10 font-bold font-sans tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-700 dark:to-white'>Upcoming Projects</h2>
-      <div className='grid md:grid-cols-2 max-md:mx-4 gap-4'>
+      <h2 className='text-3xl md:text-4xl my-10 font-bold font-sans tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-700 dark:to-white'>Upcoming Projects</h2>
+      <div className='grid md:grid-cols-2 gap-4'>
         {
           upcomingProjects.map(project => (
             <div key={project.title} className="projects">

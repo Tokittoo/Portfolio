@@ -30,9 +30,9 @@ const heroButtons: IHeroButton[] = [
 
 const Intro = () => {
   return (
-    <AnimationWrapper className='px-8 my-4'>
-      <div className='flex justify-between'>
-        <div className='flex gap-4'>
+    <AnimationWrapper className='px-4 md:px-8 my-4'>
+      <div className='flex flex-col md:flex-row justify-between gap-4'>
+        <div className='flex gap-3 md:gap-4'>
           <motion.div
             variants={childVariant}
             className='overflow-hidden w-max h-max rounded-xl shrink-0 border border-border shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)]'
@@ -42,17 +42,18 @@ const Intro = () => {
               height={75}
               width={75}
               alt='Avatar'
+              className='w-16 h-16 md:w-[75px] md:h-[75px]'
             />
           </motion.div>
           <div>
-            <motion.h1 variants={childVariant} className='text-3xl font-instrument-serif mt-1'>
+            <motion.h1 variants={childVariant} className='text-2xl md:text-3xl font-instrument-serif mt-1'>
               Krish
             </motion.h1>
-            <motion.p variants={childVariant} className='flex gap-1 items-center text-sm text-muted-foreground'>17 • <TextAnimation /></motion.p>
+            <motion.p variants={childVariant} className='flex gap-1 items-center text-xs md:text-sm text-muted-foreground'>17 • <TextAnimation /></motion.p>
           </div>
         </div>
         {/* Motion div below */}
-        <div className='flex flex-col gap-1 mt-1'>
+        <div className='flex flex-row md:flex-col gap-2 md:gap-1 md:mt-1'>
           {
             heroButtons.map(h => (
               <motion.div variants={childVariant} key={h.text}>

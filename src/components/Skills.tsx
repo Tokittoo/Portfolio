@@ -25,11 +25,11 @@ const skills: Skill[] = [
 function Skills() {
   return (
     <AnimationWrapper
-      className='md:p-2 -my-8 px-8 pt-1 pb-8'
+      className='px-4 md:px-8 pt-1 pb-8 -my-8'
       id='skills'
     >
-      <motion.h2 variants={childVariant} className='text-4xl ml-2 mt-8 mb-5 font-bold font-sans tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-700 dark:to-white'>Skills</motion.h2>
-      <div className='flex flex-wrap gap-3 max-md:mx-4'>
+      <motion.h2 variants={childVariant} className='text-3xl md:text-4xl mt-8 mb-5 font-bold font-sans tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-700 dark:to-white'>Skills</motion.h2>
+      <div className='flex flex-wrap gap-3'>
         {skills.map(skill => (
           <motion.div
             key={skill.name}
