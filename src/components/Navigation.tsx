@@ -14,10 +14,6 @@ const items = [
     name: 'Projects',
     link: '/#projects',
   },
-  {
-    name: 'Socials',
-    link: '/#socials',
-  }
 ]
 
 function Navigation() {
