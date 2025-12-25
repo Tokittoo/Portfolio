@@ -2,7 +2,8 @@
 
 import React from 'react'
 import { motion } from 'motion/react'
-import { IconBrandCss3, IconBrandFramerMotion, IconBrandHtml5, IconBrandJavascript, IconBrandNextjs, IconBrandNodejs, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconBrandGit, IconBrandVite, IconBrandGithub } from '@tabler/icons-react'
+import { IconBrandCss3, IconBrandFramerMotion, IconBrandHtml5, IconBrandJavascript, IconBrandNextjs, IconBrandNodejs, IconBrandReact, IconBrandTailwind, IconBrandTypescript } from '@tabler/icons-react'
+import { SiVite } from "react-icons/si";
 import { AnimationWrapper, childVariant } from './ui/animation-wrapper'
 
 type Skill = {
@@ -19,7 +20,8 @@ const skills: Skill[] = [
   { name: 'HTML', logo: <IconBrandHtml5 /> },
   { name: 'CSS', logo: <IconBrandCss3 /> },
   { name: 'Tailwind CSS', logo: <IconBrandTailwind /> },
-  { name: 'Framer Motion', logo: <IconBrandFramerMotion /> }
+  { name: 'Framer Motion', logo: <IconBrandFramerMotion /> },
+  { name: 'Vite.js', logo: <SiVite /> }
 ]
 
 function Skills() {
