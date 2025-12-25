@@ -93,7 +93,7 @@ export const projects: Project[] = [
         </p>
       </>
     ),
-    image: '/Projects/Sibhi.png',
+    image: '/Projects/Sibhi.webp',
     tags: [
       Html,
       CSS,
@@ -112,7 +112,7 @@ export const projects: Project[] = [
         </p>
       </>
     ),
-    image: '/Projects/Sibhi-v2.png',
+    image: '/Projects/Sibhi-v2.webp',
     tags: [
       React,
       TypeScript,
@@ -154,7 +154,7 @@ export const projects: Project[] = [
         </p>
       </>
     ),
-    image: '/Projects/Secure-Worldz.png',
+    image: '/Projects/Secure-Worldz.webp',
     tags: [
       React,
       NextJS,
