@@ -169,7 +169,6 @@ export const upcomingProjects: UpcomingProject[] = [
   {
     title: 'Drago',
     description: "Drago is a cybersecurity-focused site offering a growing library of tools and project checklists to help users secure their digital assets.",
-    link: 'https://drago-beta.vercel.app',
     tags: [
       React,
       Vitejs,
