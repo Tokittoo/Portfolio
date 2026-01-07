@@ -14,7 +14,7 @@ export function GithubGraphClient({ data }: GithubGraphClientProps) {
     <div className='flex flex-col font-sans'>
       <motion.h2
         variants={childVariant}
-        className='text-3xl md:text-4xl mt-8 mb-4 font-bold font-sans tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-700 dark:to-white'
+        className='text-3xl md:text-4xl mt-2 mb-4 font-bold font-sans tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-700 dark:to-white'
       >
         Github
       </motion.h2>

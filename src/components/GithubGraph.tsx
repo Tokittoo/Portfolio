@@ -48,7 +48,7 @@ async function GithubGraphContent() {
 export default function GithubGraph() {
   return (
     <Suspense fallback={<div />}>
-      <AnimationWrapper className='px-4 md:px-8 pt-1 pb-8' id='github'>
+      <AnimationWrapper className='px-4 md:px-8 pt-0 pb-8' id='github'>
         <GithubGraphContent />
       </AnimationWrapper>
     </Suspense>

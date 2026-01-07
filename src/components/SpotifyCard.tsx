@@ -43,7 +43,7 @@ async function SpotifyContent() {
 
 export default function SpotifyCard() {
   return (
-    <div className="my-8 px-4 md:px-0">
+    <div className="mt-8 mb-2 px-4 md:px-0">
       <Suspense fallback={<div className='w-full max-w-[620px] mx-auto h-18 bg-card text-card-foreground border border-border rounded-2xl p-4 flex items-center gap-2'>
         <IconLoader2 className='size-5 text-neutral-600 dark:text-neutral-300 animate-spin' />
       </div>}>
