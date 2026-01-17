@@ -14,6 +14,10 @@ const items = [
     name: 'Projects',
     link: '/#projects',
   },
+  {
+    name: 'Contact',
+    link: '/#contact',
+  },
 ]
 
 function Navigation() {

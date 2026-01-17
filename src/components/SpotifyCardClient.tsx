@@ -57,15 +57,15 @@ export default function SpotifyCardClient({ data }: SpotifyCardClientProps) {
         variants={childVariant}
         className="w-full max-w-[620px] mx-auto bg-card text-card-foreground border border-border rounded-2xl p-2 flex items-center justify-between gap-2"
       >
-        <div className="flex justify-center items-center gap-4">
+        <div className="flex flex-1 items-center gap-3 overflow-hidden">
           <Image
             src={song.imageUrl}
             height={56}
             width={56}
             alt={song.title}
-            className="rounded-lg"
+            className="rounded-lg shrink-0"
           />
-          <div className='mr-2'>
+          <div className='flex-1 min-w-0 mr-2'>
             <div className="flex gap-1 items-center">
               <Image
                 src="/assets/spotify.svg"
@@ -73,18 +73,18 @@ export default function SpotifyCardClient({ data }: SpotifyCardClientProps) {
                 width={12}
                 alt="Spotify Logo"
               />
-              <p className="text-xs text-muted-foreground">
+              <p className="text-xs text-muted-foreground whitespace-nowrap">
                 {isPlaying ? "Listening to" : "Last Played"}
               </p>
             </div>
             <Link
               href={song.externalLink}
               target="_blank"
-              className="font-sans tracking-tight font-medium line-clamp-1 truncate text-sm hover:text-green-500 hover:underline transition-colors duration-100"
+              className="block font-sans tracking-tight font-medium truncate text-sm hover:text-green-500 hover:underline transition-colors duration-100"
             >
               {song.title}
             </Link>
-            <p className="text-xs text-muted-foreground line-clamp-1">
+            <p className="text-xs text-muted-foreground truncate">
               by {song.artists.join(", ")}
             </p>
           </div>

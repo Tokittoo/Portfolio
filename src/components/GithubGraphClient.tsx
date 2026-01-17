@@ -5,11 +5,15 @@ import { ActivityCalendar, type Activity } from 'react-activity-calendar'
 
 import { childVariant } from './ui/animation-wrapper'
 
+import { useTheme } from "next-themes"
+
 interface GithubGraphClientProps {
   data: Activity[] | null
 }
 
 export function GithubGraphClient({ data }: GithubGraphClientProps) {
+  const { resolvedTheme } = useTheme()
+
   return (
     <div className='flex flex-col font-sans'>
       <motion.h2
@@ -43,6 +47,11 @@ export function GithubGraphClient({ data }: GithubGraphClientProps) {
               blockSize={9.5}
               blockMargin={2}
               fontSize={12}
+              colorScheme={resolvedTheme === 'dark' ? 'dark' : 'light'}
+              theme={{
+                light: ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353'],
+                dark: ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353'],
+              }}
             />
           </div>
         )}

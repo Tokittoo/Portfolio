@@ -43,6 +43,7 @@ const Intro = () => {
               width={75}
               alt='Avatar'
               className='w-16 h-16 md:w-[75px] md:h-[75px]'
+              priority={true}
             />
           </motion.div>
           <div>
@@ -71,7 +72,7 @@ const Intro = () => {
 }
 
 const AboutMe = () => (
-  <div className='text-muted-foreground text-sm my-4 flex flex-col gap-2 text-justify'>
+  <div className='text-muted-foreground text-sm my-4 flex flex-col gap-2'>
     <motion.p variants={childVariant}>
       I'm just a dude who turns coke into code. I build dope stuff that doesn't end up in my GitHub graveyard—'cause the world's got enough abandoned side projects. My code slaps harder than my GPA ever did. I enjoy taking ideas from zero to one, iterating fast, and polishing the little details that make products feel premium. If it’s useful, reliable, and a bit over-engineered in the best way, I’m probably behind it.
     </motion.p>
